@@ -9,7 +9,7 @@
         <div class="b-contacts__item">
             <a href="maps://">
                 <span class="i-row1 i-row1__phone"></span>
-                <span>ул. трубецкая 28 с1</span>
+                <span>ул. трубецкая 28с1</span>
             </a>
         </div>
     </div>
@@ -27,21 +27,21 @@
 <nav class="b-menu">
     <div class="b-menu-main">
         <ul>
-            <li><a href='#'>главная</a></li>
-            <li><a href='#'>о салоне</a></li>
-            <li><a href='#'>школа brush</a></li>
-            <li><a href='#'>цены</a></li>
-            <li><a href='#'>пресса о нас</a></li>
-            <li><a href='#'>спецпредложения</a></li>
+            <li><a href='/'>главная</a></li>
+            <li><a href='/about/'>о салоне</a></li>
+            <li><a href='http://brush-salon.ru'  onclick="this.target='_blank';">школа brush</a></li>
+            <li><a href='/price/'>цены</a></li>
+            <li><a href='/press/'>пресса о нас</a></li>
+            <li><a href='/spec/'>спецпредложения</a></li>
         </ul>
     </div>
     <div class="b-menu-example">
         <ul>
-            <li><a href='#'>волосы</a></li>
-            <li><a href='#'>ногти</a></li>
-            <li><a href='#'>брови & ресницы & макияж</a></li>
-            <li><a href='#'>косемтология & эпиляция</a></li>
-            <li><a href='#'>пермаментный макияж</a></li>
+            <li><a href='/typical/'>волосы</a></li>
+            <li><a href='/typical/'>ногти</a></li>
+            <li><a href='/typical/'>брови & ресницы & макияж</a></li>
+            <li><a href='/typical/'>косемтология & эпиляция</a></li>
+            <li><a href='/typical/'>пермаментный макияж</a></li>
         </ul>
     </div>
 </nav>

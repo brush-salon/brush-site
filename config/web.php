@@ -6,6 +6,7 @@ $config = [
     'id' => 'basic',
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
+    'defaultRoute' => 'web',
     'components' => [
         'urlManager' => [
             'enablePrettyUrl' => true,
@@ -13,6 +14,7 @@ $config = [
             'enableStrictParsing' => false,
             'suffix' => '/',
             'rules' => [
+                '<action:\w+>' => 'web/<action>',
                 '/<controller:\w+>/<action:\w+>/<id:\d+>' => '<controller>/<action>',
                 '/<controller:\w+>' => '<controller>/index',
             ],
