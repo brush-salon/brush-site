@@ -14,7 +14,7 @@
             <div class="price-toggle-controller b-price-group__title b-price-group__title_bold"
                  data-target="#hairPrice">
                 волосы
-                <span class="glyphicon glyphicon-chevron-up"></span>
+                <span class="glyphicon chevron open"></span>
             </div>
             <div id="hairPrice" class="b-price-table">
                 <div class="b-price-group__title ">

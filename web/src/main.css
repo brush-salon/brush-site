@@ -7299,6 +7299,12 @@ button.close {
 .b-modal-body .controls .prev:hover {
   opacity: 0.9;
 }
+.glyphicon.chevron:before {
+  content: "\E114";
+}
+.glyphicon.chevron.open:before {
+  content: "\E113";
+}
 .g-cover {
   position: absolute;
   left: 0;
