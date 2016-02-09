@@ -11,11 +11,12 @@
     </div>
     <div class="b-price-list">
         <div class="b-price-group">
-            <div class="b-price-group__title b-price-group__title_bold">
+            <div class="price-toggle-controller b-price-group__title b-price-group__title_bold"
+                 data-target="#hairPrice">
                 волосы
                 <span class="glyphicon glyphicon-chevron-up"></span>
             </div>
-            <div class="b-price-table">
+            <div id="hairPrice" class="b-price-table">
                 <div class="b-price-group__title ">
                     стрижка
                     <span class="glyphicon glyphicon-chevron-up"></span>

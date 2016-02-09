@@ -30,7 +30,7 @@ AppAsset::register($this);
 <? include '__footer.php'?>
 <script src="<?=Url::to('@web/src/bundle.js')?>"></script>
 <script>
-    window.page = new PageController(<?=Yii::$app->controller->action->id?>, <?=Yii::$app->layout?>);
+    window.page = new PageController('<?=Yii::$app->controller->action->id?>', '<?=Yii::$app->layout?>');
 </script>
 </body>
 </html>
