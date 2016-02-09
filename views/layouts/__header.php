@@ -14,7 +14,7 @@
         </div>
     </div>
     <div class="b-logo">
-        <a href="#">
+        <a href="/">
             <img src="/images/logo.png">
         </a>
     </div>
