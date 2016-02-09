@@ -14,9 +14,9 @@ $config = [
             'enableStrictParsing' => false,
             'suffix' => '/',
             'rules' => [
-                '<action:\w+>' => 'web/<action>',
-                '/<controller:\w+>/<action:\w+>/<id:\d+>' => '<controller>/<action>',
-                '/<controller:\w+>' => '<controller>/index',
+                '<action:\w+>' => 'web/web/<action>',
+                '/<controller:\w+>/<action:\w+>/<id:\d+>' => 'web/<controller>/<action>',
+                '/<controller:\w+>' => 'web/<controller>/index',
             ],
         ],
         'request' => [
