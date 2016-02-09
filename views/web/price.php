@@ -16,12 +16,12 @@
                 волосы
                 <span class="glyphicon chevron open"></span>
             </div>
-            <div id="hairPrice" class="b-price-table">
+            <div id="hairPrice" class="b-price-table collapse in">
                 <div class="price-toggle-controller b-price-group__title " data-target="#hairPrice1">
                     стрижка
                     <span class="glyphicon chevron open"></span>
                 </div>
-                <ul id="hairPrice1">
+                <ul class="collapse in" id="hairPrice1">
                     <li class="b-price-table__row">
                         <div class="name">короткие волосы</div>
                         <div class="price">
@@ -65,7 +65,7 @@
                     сушка
                     <span class="glyphicon chevron open"></span>
                 </div>
-                <ul id="hairPrice2">
+                <ul class="collapse in" id="hairPrice2">
                     <li class="b-price-table__row">
                         <div class="name">короткие волосы</div>
                         <div class="price">
@@ -109,7 +109,7 @@
                     укладка
                     <span class="glyphicon chevron open"></span>
                 </div>
-                <ul id="hairPrice3">
+                <ul class="collapse in" id="hairPrice3">
                     <li class="b-price-table__row">
                         <div class="name">короткие волосы</div>
                         <div class="price">
@@ -152,7 +152,7 @@
                     маска
                     <span class="glyphicon glyphicon-chevron-down"></span>
                 </div>
-                <ul id="hairPrice4">
+                <ul class="collapse in" id="hairPrice4">
                     <li class="b-price-table__row">
                         <div class="name">короткие волосы</div>
                         <div class="price">
@@ -200,12 +200,12 @@
                 Ногти
                 <span class="glyphicon chevron open"></span>
             </div>
-            <div class="b-price-table" id="nailPrice">
+            <div class="b-price-table collapse in" id="nailPrice">
                 <div class="b-price-group__title price-toggle-controller" data-target="#nailPrice1">
                     Маникюр
                     <span class="glyphicon chevron open "></span>
                 </div>
-                <ul id="nailPrice1">
+                <ul class="collapse in" id="nailPrice1">
                     <li class="b-price-table__row">
                         <div class="name">Покрытие лаком</div>
                         <div class="price">
