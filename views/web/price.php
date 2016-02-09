@@ -4,8 +4,8 @@
 <section class="b-price">
     <div class="b-price-gender">
         <ul>
-            <li class="active">для него</li>
-            <li>для нее</li>
+            <li class="active">для нее</li>
+            <li>для него</li>
             <li>для детей</li>
         </ul>
     </div>
