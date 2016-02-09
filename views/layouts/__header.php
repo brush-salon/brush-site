@@ -28,20 +28,20 @@
     <div class="b-menu-main">
         <ul>
             <li><a href='/'>главная</a></li>
-            <li><a href='/about/'>о салоне</a></li>
+            <li><a href='/web/about/'>о салоне</a></li>
             <li><a href='http://brush-salon.ru'  onclick="this.target='_blank';">школа brush</a></li>
-            <li><a href='/price/'>цены</a></li>
-            <li><a href='/press/'>пресса о нас</a></li>
-            <li><a href='/spec/'>спецпредложения</a></li>
+            <li><a href='/web/price/'>цены</a></li>
+            <li><a href='/web/press/'>пресса о нас</a></li>
+            <li><a href='/web/spec/'>спецпредложения</a></li>
         </ul>
     </div>
     <div class="b-menu-example">
         <ul>
-            <li><a href='/typical/'>волосы</a></li>
-            <li><a href='/typical/'>ногти</a></li>
-            <li><a href='/typical/'>брови & ресницы & макияж</a></li>
-            <li><a href='/typical/'>косемтология & эпиляция</a></li>
-            <li><a href='/typical/'>пермаментный макияж</a></li>
+            <li><a href='/web/typical/'>волосы</a></li>
+            <li><a href='/web/typical/'>ногти</a></li>
+            <li><a href='/web/typical/'>брови & ресницы & макияж</a></li>
+            <li><a href='/web/typical/'>косемтология & эпиляция</a></li>
+            <li><a href='/web/typical/'>пермаментный макияж</a></li>
         </ul>
     </div>
 </nav>

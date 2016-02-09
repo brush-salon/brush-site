@@ -6,7 +6,7 @@ use yii\helpers\Url;
 <section class="b-menu-image">
     <div class="b-menu-image-row">
         <div class="b-menu-image-item">
-            <a href='/about/'>
+            <a href='/web//about/'>
                 <span class="b-menu-image-item__label">&#8212; о салоне &#8212;</span>
                 <img src="<?=Url::to('@web/images/main/about.png')?>">
             </a>
@@ -18,19 +18,19 @@ use yii\helpers\Url;
             </a>
         </div>
         <div class="b-menu-image-item">
-            <a href='/price/'>
+            <a href='/web/price/'>
                 <span class="b-menu-image-item__label">&#8212; цены &#8212;</span>
                 <img src="<?=Url::to('@web/images/main/price.png')?>">
             </a>
         </div>
         <div class="b-menu-image-item">
-            <a href='/press/'>
+            <a href='/web/press/'>
                 <span class="b-menu-image-item__label">&#8212; пресса о нас &#8212;</span>
                 <img src="<?=Url::to('@web/images/main/press.png')?>">
             </a>
         </div>
         <div class="b-menu-image-item">
-            <a href='/spec/'>
+            <a href='/web/spec/'>
                 <span class="b-menu-image-item__label">&#8212; спецпредложения &#8212;</span>
                 <img src="<?=Url::to('@web/images/main/deals.png')?>">
             </a>
@@ -39,31 +39,31 @@ use yii\helpers\Url;
 
     <div class="b-menu-image-row">
         <div class="b-menu-image-item">
-            <a href='/typical/'>
+            <a href='/web/typical/'>
                 <img src="<?=Url::to('@web/images/main/hair.png')?>">
                 <span class="b-menu-image-item__title">волосы</span>
             </a>
         </div>
         <div class="b-menu-image-item">
-            <a href='/typical/'>
+            <a href='/web/typical/'>
                 <img src="<?=Url::to('@web/images/main/nails.png')?>">
                 <span class="b-menu-image-item__title">ногти</span>
             </a>
         </div>
         <div class="b-menu-image-item">
-            <a href='/typical/'>
+            <a href='/web/typical/'>
                 <img src="<?=Url::to('@web/images/main/makeup.png')?>">
                 <span class="b-menu-image-item__title">брови & ресницы & макияж</span>
             </a>
         </div>
         <div class="b-menu-image-item">
-            <a href='/typical/'>
+            <a href='/web/typical/'>
                 <img src="<?=Url::to('@web/images/main/depilation.png')?>">
                 <span class="b-menu-image-item__title">косметология & эпиляция</span>
             </a>
         </div>
         <div class="b-menu-image-item">
-            <a href='/typical/'>
+            <a href='/web/typical/'>
                 <img src="<?=Url::to('@web/images/main/permanent-makeup.png')?>">
                 <span class="b-menu-image-item__title">пермаментный макияж</span>
             </a>
