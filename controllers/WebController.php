@@ -1,11 +1,4 @@
 <?php
-/**
- * Created by JetBrains PhpStorm.
- * User: alekseenko
- * Date: 2/8/16
- * Time: 8:36 PM
- * To change this template use File | Settings | File Templates.
- */
 
 namespace app\controllers;
 
@@ -23,5 +16,21 @@ class WebController extends Controller{
 
     public function actionAbout(){
         return $this->render('about');
+    }
+
+    public function actionPress(){
+        return $this->render('press');
+    }
+
+    public function actionPrice(){
+        return $this->render('price');
+    }
+
+    public function actionSpec(){
+        return $this->render('spec');
+    }
+
+    public function actionTypical(){
+        return $this->render('typical');
     }
 }
