@@ -1,6 +1,10 @@
 RewriteEngine on
 
+RewriteEngine on
+RewriteRule ^((?!web/).*)$ web/$1 [L,NC]
+
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
+
 
 RewriteRule .* index.php [L]
