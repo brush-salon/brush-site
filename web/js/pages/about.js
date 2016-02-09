@@ -2,7 +2,6 @@ var Abstract = require('./abstract');
 
 function About() {
     Abstract.apply(this, arguments);
-    console.warn('here', $('.swiper-container'), $('.swiper-wrapper'));
     this.swiper = new Swiper('.swiper-container', {
         slidesPerView: 3,
         loop: true,

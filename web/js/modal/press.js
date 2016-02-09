@@ -19,11 +19,12 @@ Press.prototype = $.extend({constructor: Press}, Object.create(Abstract.prototyp
     },
     createSlider: function () {
         this.swiper = new Swiper('.swiper-container', {
+            initialSlide: this.slide,
             speed: 400,
             nextButton: $('#arrowControls').find('.next')[0],
             prevButton: $('#arrowControls').find('.prev')[0]
         });
-        this.swiper.slideTo(this.slide);
+        //this.swiper.slideTo(this.slide);
     }
 });
 

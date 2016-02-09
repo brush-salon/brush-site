@@ -26,6 +26,7 @@
   },
   "dependencies": {
     "jquery": "^2.2.0",
+    "sizzle": "^2.3.0",
     "slick-carousel": "^1.5.9",
     "swiper": "^3.3.0"
   }
