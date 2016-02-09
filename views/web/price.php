@@ -150,7 +150,7 @@
                 </ul>
                 <div class="price-toggle-controller b-price-group__title " data-target="#hairPrice4">
                     маска
-                    <span class="glyphicon glyphicon-chevron-down"></span>
+                    <span class="glyphicon chevron open"></span>
                 </div>
                 <ul class="collapse in" id="hairPrice4">
                     <li class="b-price-table__row">
