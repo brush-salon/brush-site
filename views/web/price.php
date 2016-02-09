@@ -19,7 +19,7 @@
             <div id="hairPrice" class="b-price-table">
                 <div class="price-toggle-controller b-price-group__title " data-target="#hairPrice1">
                     стрижка
-                    <span class="glyphicon glyphicon-chevron-up"></span>
+                    <span class="glyphicon chevron open"></span>
                 </div>
                 <ul id="hairPrice1">
                     <li class="b-price-table__row">
@@ -63,7 +63,7 @@
                 </ul>
                 <div class="price-toggle-controller b-price-group__title "  data-target="#hairPrice2">
                     сушка
-                    <span class="glyphicon glyphicon-chevron-down"></span>
+                    <span class="glyphicon chevron open"></span>
                 </div>
                 <ul id="hairPrice2">
                     <li class="b-price-table__row">
@@ -107,7 +107,7 @@
                 </ul>
                 <div class="price-toggle-controller b-price-group__title " data-target="#hairPrice3">
                     укладка
-                    <span class="glyphicon glyphicon-chevron-up"></span>
+                    <span class="glyphicon chevron open"></span>
                 </div>
                 <ul id="hairPrice3">
                     <li class="b-price-table__row">
@@ -198,12 +198,12 @@
         <div class="b-price-group">
             <div class="price-toggle-controller b-price-group__title b-price-group__title_bold" data-target="#nailPrice">
                 Ногти
-                <span class="glyphicon glyphicon-chevron-up"></span>
+                <span class="glyphicon chevron open"></span>
             </div>
             <div class="b-price-table" id="nailPrice">
                 <div class="b-price-group__title price-toggle-controller" data-target="#nailPrice1">
                     Маникюр
-                    <span class="glyphicon glyphicon-chevron-up "></span>
+                    <span class="glyphicon chevron open "></span>
                 </div>
                 <ul id="nailPrice1">
                     <li class="b-price-table__row">
