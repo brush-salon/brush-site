@@ -18,7 +18,6 @@ AppAsset::register($this);
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title><?= Html::encode($this->title) ?></title>
     <link href="/src/main.css?<?=time()?>" rel="stylesheet">
-    <!--<link href="src/main.css?<?=time()?>" rel="stylesheet">-->
 </head>
 <body>
 <? include '__modal.php'?>

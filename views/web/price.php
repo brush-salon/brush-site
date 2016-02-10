@@ -192,8 +192,6 @@
                     </ul>
                 </div>
             </div>
-
-
             <div class="b-price-group">
                 <div class="price-toggle-controller b-price-group__title b-price-group__title_bold"
                      data-target="#femaleNailPrice">
@@ -227,17 +225,17 @@
                     </ul>
                 </div>
             </div>
-        </div s>
+        </div>
 
         <div id='malePriceList' class="tab-pane fade b-price-list">
             <div class="b-price-group">
                 <div class="price-toggle-controller b-price-group__title b-price-group__title_bold"
-                     data-target="#hairPrice">
+                     data-target="#maleHairPrice">
                     волосы
                     <span class="glyphicon chevron open"></span>
                 </div>
                 <div id="maleHairPrice" class="b-price-table collapse in">
-                    <div class="price-toggle-controller b-price-group__title " data-target="#hairPrice1">
+                    <div class="price-toggle-controller b-price-group__title " data-target="#maleHairPrice1">
                         стрижка
                         <span class="glyphicon chevron open"></span>
                     </div>
@@ -281,7 +279,7 @@
                         </li>
 
                     </ul>
-                    <div class="price-toggle-controller b-price-group__title " data-target="#hairPrice2">
+                    <div class="price-toggle-controller b-price-group__title " data-target="#maleHairPrice2">
                         сушка
                         <span class="glyphicon chevron open"></span>
                     </div>
@@ -325,7 +323,7 @@
                         </li>
 
                     </ul>
-                    <div class="price-toggle-controller b-price-group__title " data-target="#hairPrice3">
+                    <div class="price-toggle-controller b-price-group__title " data-target="#maleHairPrice3">
                         укладка
                         <span class="glyphicon chevron open"></span>
                     </div>
@@ -368,7 +366,7 @@
 
                         </li>
                     </ul>
-                    <div class="price-toggle-controller b-price-group__title " data-target="#hairPrice4">
+                    <div class="price-toggle-controller b-price-group__title " data-target="#maleHairPrice4">
                         маска
                         <span class="glyphicon chevron open"></span>
                     </div>
@@ -453,12 +451,12 @@
         <div id='childPriceList' class="tab-pane fade b-price-list">
             <div class="b-price-group">
                 <div class="price-toggle-controller b-price-group__title b-price-group__title_bold"
-                     data-target="#hairPrice">
+                     data-target="#maleHairPrice">
                     волосы
                     <span class="glyphicon chevron open"></span>
                 </div>
                 <div id="childHairPrice" class="b-price-table collapse in">
-                    <div class="price-toggle-controller b-price-group__title " data-target="#hairPrice1">
+                    <div class="price-toggle-controller b-price-group__title " data-target="#childHairPrice1">
                         стрижка
                         <span class="glyphicon chevron open"></span>
                     </div>
@@ -502,7 +500,7 @@
                         </li>
 
                     </ul>
-                    <div class="price-toggle-controller b-price-group__title " data-target="#hairPrice2">
+                    <div class="price-toggle-controller b-price-group__title " data-target="#childHairPrice2">
                         сушка
                         <span class="glyphicon chevron open"></span>
                     </div>
@@ -546,7 +544,7 @@
                         </li>
 
                     </ul>
-                    <div class="price-toggle-controller b-price-group__title " data-target="#hairPrice3">
+                    <div class="price-toggle-controller b-price-group__title " data-target="#childHairPrice3">
                         укладка
                         <span class="glyphicon chevron open"></span>
                     </div>
@@ -589,7 +587,7 @@
 
                         </li>
                     </ul>
-                    <div class="price-toggle-controller b-price-group__title " data-target="#hairPrice4">
+                    <div class="price-toggle-controller b-price-group__title " data-target="#childHairPrice4">
                         маска
                         <span class="glyphicon chevron open"></span>
                     </div>
