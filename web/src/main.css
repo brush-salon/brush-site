@@ -2122,7 +2122,7 @@ pre code {
     width: 750px;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 980px) {
   .container {
     width: 970px;
   }
@@ -2462,7 +2462,7 @@ pre code {
     margin-left: 0%;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 980px) {
   .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
     float: left;
   }
@@ -6459,7 +6459,7 @@ button.close {
     width: 300px;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 980px) {
   .modal-lg {
     width: 900px;
   }
@@ -7066,7 +7066,7 @@ button.close {
     display: inline-block !important;
   }
 }
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 979px) {
   .visible-sm {
     display: block !important;
   }
@@ -7081,22 +7081,22 @@ button.close {
     display: table-cell !important;
   }
 }
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 979px) {
   .visible-sm-block {
     display: block !important;
   }
 }
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 979px) {
   .visible-sm-inline {
     display: inline !important;
   }
 }
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 979px) {
   .visible-sm-inline-block {
     display: inline-block !important;
   }
 }
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 980px) and (max-width: 1199px) {
   .visible-md {
     display: block !important;
   }
@@ -7111,17 +7111,17 @@ button.close {
     display: table-cell !important;
   }
 }
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 980px) and (max-width: 1199px) {
   .visible-md-block {
     display: block !important;
   }
 }
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 980px) and (max-width: 1199px) {
   .visible-md-inline {
     display: inline !important;
   }
 }
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 980px) and (max-width: 1199px) {
   .visible-md-inline-block {
     display: inline-block !important;
   }
@@ -7161,12 +7161,12 @@ button.close {
     display: none !important;
   }
 }
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 979px) {
   .hidden-sm {
     display: none !important;
   }
 }
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 980px) and (max-width: 1199px) {
   .hidden-md {
     display: none !important;
   }
@@ -7254,50 +7254,6 @@ button.close {
 }
 .modal-footer .text {
   color: #808080;
-}
-.b-modal-dialog {
-  margin-right: 10px;
-  margin-left: 10px;
-}
-.b-modal-content {
-  background: none;
-  border: none;
-  box-shadow: none;
-}
-.b-modal-body {
-  padding: 0;
-}
-.b-modal-body .close {
-  font-size: 35px;
-  position: absolute;
-  right: 10px;
-  top: 10px;
-  opacity: 0.7;
-  z-index: 2;
-}
-.b-modal-body .close:hover {
-  opacity: 0.9;
-}
-.b-modal-body .controls {
-  position: absolute;
-  font-size: 35px;
-  bottom: 10px;
-  width: 100%;
-  opacity: 0.7;
-  z-index: 2;
-}
-.b-modal-body .controls .next {
-  position: inherit;
-  right: 10px;
-}
-.b-modal-body .controls .next:hover {
-  opacity: 0.9;
-}
-.b-modal-body .controls .prev {
-  left: 10px;
-}
-.b-modal-body .controls .prev:hover {
-  opacity: 0.9;
 }
 .glyphicon.chevron:before {
   content: "\E114";
@@ -7738,30 +7694,25 @@ body {
   font-weight: 900;
 }
 .b-info-text__header {
+  margin-top: 0;
   font-size: 14px;
   line-height: 1.42857143;
   font-family: GothamProBold;
 }
 .b-info-photo {
   width: 100%;
-  position: relative;
-  overflow: hidden;
 }
 @media (min-width: 480px) {
   .b-info-photo {
     width: 61%;
   }
 }
-.b-info-photo-i .swiper-slide {
-  width: 200px;
-}
-.b-photo-column {
+.b-info-photo .swiper-slide {
   width: 194px;
   outline: none;
 }
-.b-photo-column img {
-  padding: 0 0px 10px 10px;
-  float: right;
+.b-info-photo .swiper-slide img {
+  padding: 0 0 10px 0;
 }
 .b-photo-control {
   margin-top: 20px;
@@ -8110,4 +8061,48 @@ body {
 .b-price-table__row .price div span {
   padding: 0.33em;
   background: white;
+}
+.b-modal-dialog {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.b-modal-content {
+  background: none;
+  border: none;
+  box-shadow: none;
+}
+.b-modal-body {
+  padding: 0;
+}
+.b-modal-body .close {
+  font-size: 35px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  opacity: 0.7;
+  z-index: 2;
+}
+.b-modal-body .close:hover {
+  opacity: 0.9;
+}
+.b-modal-body .controls {
+  position: absolute;
+  font-size: 35px;
+  bottom: 10px;
+  width: 100%;
+  opacity: 0.7;
+  z-index: 2;
+}
+.b-modal-body .controls .next {
+  position: inherit;
+  right: 10px;
+}
+.b-modal-body .controls .next:hover {
+  opacity: 0.9;
+}
+.b-modal-body .controls .prev {
+  left: 10px;
+}
+.b-modal-body .controls .prev:hover {
+  opacity: 0.9;
 }

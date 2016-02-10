@@ -2,8 +2,10 @@ var Abstract = require('./abstract');
 
 function About() {
     Abstract.apply(this, arguments);
+    console.warn('here')
     this.swiper = new Swiper('.swiper-container', {
-        slidesPerView: 3,
+        centeredSlides: true,
+        slidesPerView: 'auto',
         loop: true,
         nextButton: $('.aboutSliderControl').find('.next')[0],
         prevButton: $('.aboutSliderControl').find('.prev')[0]
