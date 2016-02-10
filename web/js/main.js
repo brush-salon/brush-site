@@ -1,5 +1,6 @@
 require('../less/main.less');
 require('bootstrap/js/transition');
+require('bootstrap/js/tab');
 require('bootstrap/js/modal');
 require('bootstrap/js/collapse');
 
