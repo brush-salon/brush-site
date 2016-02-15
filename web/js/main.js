@@ -12,6 +12,8 @@ var PricePage = require('./pages/price.js');
 
 var PressModal = require('./modal/press.js');
 
+var MainLayout = require('./layout/main.js');
+
 function PageController(page, layout) {
     this.pages = {
         press: PressPage,
@@ -19,8 +21,7 @@ function PageController(page, layout) {
         price: PricePage,
     };
     this.layouts = {
-        layout: function () {
-        }
+        main: MainLayout
     };
     this.modals = {
         press: PressModal

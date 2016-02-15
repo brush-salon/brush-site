@@ -58,6 +58,8 @@
 
 	var PressModal = __webpack_require__(221);
 
+	var MainLayout = __webpack_require__(225);
+
 	function PageController(page, layout) {
 	    this.pages = {
 	        press: PressPage,
@@ -65,8 +67,7 @@
 	        price: PricePage,
 	    };
 	    this.layouts = {
-	        layout: function () {
-	        }
+	        main: MainLayout
 	    };
 	    this.modals = {
 	        press: PressModal
@@ -17241,6 +17242,45 @@
 	}
 	//# sourceMappingURL=maps/swiper.js.map
 
+
+/***/ },
+/* 224 */,
+/* 225 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var Abstract = __webpack_require__(226);
+
+	function Main() {
+	    Abstract.apply(this, arguments);
+	}
+
+	Main.prototype = $.extend({constructor: Main}, Object.create(Abstract.prototype), {
+	    bindEvents: function () {
+	        var _this = this;
+	        this.$('.menuController').click(function (event) {
+	            console.warn('here');
+	            _this.$('#menuContainer').toggle();
+	        });
+	    },
+	});
+
+	module.exports = Main;
+
+/***/ },
+/* 226 */
+/***/ function(module, exports) {
+
+	function Abstract() {
+	    this.bindEvents();
+	}
+	Abstract.prototype.$el = $('html');
+	Abstract.prototype.$ = function (selector) {
+	    return this.$el.find(selector);
+	}
+	Abstract.prototype.bindEvents = function () {
+	    console.warn('abstract bind events');
+	};
+	module.exports = Abstract;
 
 /***/ }
 /******/ ]);

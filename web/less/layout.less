@@ -1,4 +1,3 @@
-
 html {
   position: relative;
   min-height: 100%;
@@ -51,10 +50,10 @@ body {
 .g-head {
   display: inline-block;
   @media (max-width: @screen-xs-min) {
-    display: block;
-    float: none;
-    margin-bottom: 25px;
-    text-align: center;
+    //display: block;
+    //float: none;
+    //margin-bottom: 25px;
+    //text-align: center;
   }
 }
 
@@ -89,6 +88,12 @@ body {
   }
 }
 
+.b-menu-controller {
+  .glyphicon {
+    font-size: 25px;
+  }
+}
+
 .b-logo {
   .g-head();
   margin-top: -10px;
@@ -105,6 +110,9 @@ body {
   a {
     .g-black-link();
   }
+  .glyphicon {
+    font-size: 25px;
+  }
 }
 
 .b-register__button {
@@ -120,49 +128,4 @@ body {
   font-size: 14px;
 }
 
-.b-menu {
-  .g-center;
-  margin: 10px 0 50px 0;
-}
-
-.b-menu-main {
-  margin: 0 auto;
-  padding-bottom: 6px;
-  border-bottom: 1px solid @gray;
-  li {
-    white-space: nowrap;
-    list-style-type: none;
-    margin: 0 50px 0 0;
-    //@media (min-width: @screen-xs-min) {
-    display: inline;
-    //}
-    text-transform: uppercase;
-    font: 15px GothamProMedium;
-  }
-  li:last-child {
-    margin: 0;
-  }
-  a {
-    .g-black-link;
-  }
-}
-
-.b-menu-example {
-  margin: 4px 0 0 0;
-  li {
-    white-space: nowrap;
-    margin: 0 13px 0 0;
-    padding: 0 13px 0 0;
-    display: inline;
-    text-transform: capitalize;
-    font: 14px GothamProLight;
-    border-right: solid 1px @gray;
-  }
-  li:last-child {
-    border: 0px;
-  }
-  a {
-    color: @gray-font;
-    text-decoration: none;
-  }
-}
+@import (less) "menu.less";

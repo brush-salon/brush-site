@@ -1,7 +1,5 @@
 <?
 use yii\helpers\Url;
-
-
 ?>
 <section class="b-menu-image">
     <div class="b-menu-image-row">

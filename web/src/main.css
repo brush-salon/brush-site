@@ -7466,12 +7466,6 @@ body {
   margin-top: -10px;
 }
 @media (max-width: 480px) {
-  .b-footer__logo {
-    display: block;
-    float: none;
-    margin-bottom: 25px;
-    text-align: center;
-  }
 }
 .b-head {
   padding-top: 15px;
@@ -7488,24 +7482,12 @@ body {
   display: inline-block;
 }
 @media (max-width: 480px) {
-  .g-head {
-    display: block;
-    float: none;
-    margin-bottom: 25px;
-    text-align: center;
-  }
 }
 .b-contacts {
   display: inline-block;
   float: left !important;
 }
 @media (max-width: 480px) {
-  .b-contacts {
-    display: block;
-    float: none;
-    margin-bottom: 25px;
-    text-align: center;
-  }
 }
 .b-contacts__item {
   height: 23px;
@@ -7539,17 +7521,14 @@ body {
     font-size: 13px;
   }
 }
+.b-menu-controller .glyphicon {
+  font-size: 25px;
+}
 .b-logo {
   display: inline-block;
   margin-top: -10px;
 }
 @media (max-width: 480px) {
-  .b-logo {
-    display: block;
-    float: none;
-    margin-bottom: 25px;
-    text-align: center;
-  }
 }
 .b-logo img {
   height: 52px;
@@ -7561,12 +7540,6 @@ body {
   height: 38px;
 }
 @media (max-width: 480px) {
-  .b-register {
-    display: block;
-    float: none;
-    margin-bottom: 25px;
-    text-align: center;
-  }
 }
 .b-register a {
   color: #000;
@@ -7574,6 +7547,9 @@ body {
 }
 .b-register a:hover {
   color: #000;
+}
+.b-register .glyphicon {
+  font-size: 25px;
 }
 .b-register__button {
   display: inline-block;
@@ -7589,51 +7565,143 @@ body {
     float: right;
   }
 }
-.b-menu {
-  margin: 0 auto;
+@media (max-width: 480px) {
+  .b-menu {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    top: 0;
+    left: 0;
+    background: #fff;
+    margin: 0;
+  }
+}
+@media (min-width: 480px) {
+  .b-menu {
+    margin: 0 auto;
+    text-align: center;
+    margin: 10px 0 50px 0;
+  }
+}
+.b-menu-header {
+  padding: 20px 0;
+  border-bottom: 1px solid #e1e1e1;
   text-align: center;
-  margin: 10px 0 50px 0;
+}
+@media (max-width: 480px) {
+  .b-menu-header {
+    display: block;
+  }
+}
+@media (min-width: 480px) {
+  .b-menu-header {
+    display: none;
+  }
+}
+.b-menu-header .close {
+  position: absolute;
+  left: 15px;
+  top: 16px;
+  font-size: 26px;
+  line-height: 1.42857143;
+  font-family: GothamProBold;
+  color: #000;
+  opacity: 1;
+}
+.b-menu-label {
+  text-transform: uppercase;
+  font-size: 15px;
+  line-height: 1.42857143;
+  font-family: GothamProBold;
+  color: #000;
+  text-decoration: none;
+}
+.b-menu-label:hover {
+  color: #000;
 }
 .b-menu-main {
-  margin: 0 auto;
-  padding-bottom: 6px;
+  text-transform: uppercase;
   border-bottom: 1px solid #e1e1e1;
 }
-.b-menu-main li {
-  white-space: nowrap;
-  list-style-type: none;
-  margin: 0 50px 0 0;
-  display: inline;
-  text-transform: uppercase;
-  font: 15px GothamProMedium;
+.b-menu-main ul {
+  padding: 0;
 }
-.b-menu-main li:last-child {
-  margin: 0;
+.b-menu-main li {
+  list-style-type: none;
+  white-space: nowrap;
+}
+@media (max-width: 480px) {
+  .b-menu-main li {
+    text-align: center;
+    margin-top: 15px;
+  }
+  .b-menu-main li:last-child {
+    margin-bottom: 15px;
+  }
+}
+@media (min-width: 480px) {
+  .b-menu-main {
+    margin: 0 auto;
+    padding-bottom: 6px;
+  }
+  .b-menu-main li {
+    margin: 0 50px 0 0;
+    display: inline;
+  }
+  .b-menu-main li:last-child {
+    margin: 0;
+  }
 }
 .b-menu-main a {
+  font: 15px GothamProMedium;
+  font-size: 15px;
+  line-height: 1.42857143;
+  font-family: GothamProMedium;
   color: #000;
   text-decoration: none;
 }
 .b-menu-main a:hover {
   color: #000;
 }
-.b-menu-example {
-  margin: 4px 0 0 0;
+.b-menu-example ul {
+  padding: 0;
 }
 .b-menu-example li {
+  list-style-type: none;
   white-space: nowrap;
-  margin: 0 13px 0 0;
-  padding: 0 13px 0 0;
-  display: inline;
-  text-transform: capitalize;
-  font: 14px GothamProLight;
-  border-right: solid 1px #e1e1e1;
 }
-.b-menu-example li:last-child {
-  border: 0px;
+@media (max-width: 480px) {
+  .b-menu-example li {
+    text-align: center;
+    margin-top: 15px;
+  }
+  .b-menu-example li:last-child {
+    margin-bottom: 15px;
+  }
+}
+@media (min-width: 480px) {
+  .b-menu-example {
+    margin: 4px 0 0 0;
+  }
+  .b-menu-example li {
+    margin: 0 13px 0 0;
+    padding: 0 13px 0 0;
+    display: inline;
+    border-right: solid 1px #e1e1e1;
+  }
+  .b-menu-example li:last-child {
+    border: 0px;
+  }
 }
 .b-menu-example a {
+  font-size: 14px;
+  line-height: 1.42857143;
+  font-family: GothamProLight;
   color: #808080;
+  text-transform: capitalize;
   text-decoration: none;
 }
 .b-menu-image {

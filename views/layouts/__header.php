@@ -1,12 +1,17 @@
 <header class="b-head">
+    <div class="menuController b-menu-controller visible-xs-inline-block pull-left">
+        <span class="glyphicon glyphicon-menu-hamburger"></span>
+    </div>
+
     <div class="b-logo">
         <a href="/">
             <img src="/images/logo.png">
         </a>
     </div>
-    <div class="b-register">
+    <div class="b-register pull-right">
         <a href="#">
-            <span class="b-register__button">записаться</span>
+            <span class="b-register__button hidden-xs">записаться</span>
+            <span class="glyphicon glyphicon-pencil visible-xs-inline-block"></span>
         </a>
     </div>
     <div class="b-contacts">
@@ -24,7 +29,13 @@
         </div>
     </div>
 </header>
-<nav class="b-menu">
+<nav id="menuContainer" class="b-menu">
+    <div class="b-menu-header">
+        <button class="menuController close" type="button"  aria-label="Close">
+            <span aria-hidden="true">×</span>
+        </button>
+        <span class="b-menu-label">меню</span>
+    </div>
     <div class="b-menu-main">
         <ul>
             <li><a href='/'>главная</a></li>
