@@ -8,23 +8,21 @@ function Press(options) {
 
 Press.prototype = $.extend({constructor: Press}, Object.create(Abstract.prototype), {
     content: $('#pressModal'),
-    show: function () {
-        Abstract.prototype.show.apply(this, arguments);
-        this.createSlider();
-    },
     onClose: function () {
         console.warn(this);
         if (this.swiper)
             this.swiper.destroy(false, true);
     },
+    onShown: function () {
+        this.createSlider();
+    },
     createSlider: function () {
         this.swiper = new Swiper('.swiper-container', {
-            //initialSlide: this.slide,
+            initialSlide: this.slide,
             speed: 400,
             nextButton: $('#arrowControls').find('.next')[0],
-            prevButton: $('#arrowControls').find('.prev')[0]
+            prevButton: $('#arrowControls').find('.prev')[0],
         });
-        //this.swiper.slideTo(this.slide);
     }
 });
 
