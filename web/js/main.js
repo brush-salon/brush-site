@@ -3,7 +3,8 @@ require('bootstrap/js/transition');
 require('bootstrap/js/tab');
 require('bootstrap/js/modal');
 require('bootstrap/js/collapse');
-
+require('bootstrap/js/tooltip');
+require('bootstrap/js/popover');
 
 var PressPage = require('./pages/press.js');
 var AboutPage = require('./pages/about.js');

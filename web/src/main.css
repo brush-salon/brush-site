@@ -7289,6 +7289,10 @@ button.close {
 .g-modal-content {
   display: none;
 }
+.g-pointer {
+  cursor: pointer;
+  outline: none;
+}
 /* Код для подключения шрифта в /css/stylename.css */
 /* font-family: "GothamProRegular"; */
 @font-face {
@@ -7493,7 +7497,7 @@ body {
 }
 .b-contacts {
   display: inline-block;
-  float: left;
+  float: left !important;
 }
 @media (max-width: 480px) {
   .b-contacts {
@@ -7552,7 +7556,7 @@ body {
 }
 .b-register {
   display: inline-block;
-  float: right;
+  float: right !important;
   text-align: center;
   height: 38px;
 }
@@ -7987,6 +7991,11 @@ body {
   width: 100%;
   height: auto;
 }
+@media (max-width: 480px) {
+  .b-price-gender {
+    text-align: center;
+  }
+}
 .b-price-gender ul {
   margin: 0;
   padding: 0 0 12px;
@@ -8001,12 +8010,72 @@ body {
   font-size: 12px;
   line-height: 1.42857143;
   font-family: GothamProBold;
+  cursor: pointer;
+  outline: none;
 }
 .b-price-gender ul li.active {
   color: #000;
   font-size: 15px;
   line-height: 1.42857143;
   font-family: GothamProBold;
+}
+@media (max-width: 480px) {
+  .b-price-master {
+    position: relative;
+  }
+  .b-price-master ul {
+    margin: 0;
+    padding: 0;
+  }
+  .b-price-master ul li {
+    display: none;
+  }
+  .b-price-master ul li:first-child {
+    display: block;
+  }
+  .b-price-master ul.open {
+    position: absolute;
+    top: -20px;
+    right: 10px;
+  }
+  .b-price-master ul.open li {
+    display: block;
+  }
+}
+@media (min-width: 480px) {
+  .b-price-master {
+    float: right !important;
+  }
+  .b-price-master ul {
+    margin: 0;
+    padding: 0;
+  }
+  .b-price-master ul li {
+    display: inline-block;
+    width: 140px;
+    text-align: right;
+  }
+}
+.b-price-master .chevron {
+  display: none !important;
+  top: -17px;
+  right: 0;
+  position: absolute;
+}
+@media (max-width: 767px) {
+  .b-price-master .chevron {
+    display: block !important;
+  }
+  table.b-price-master .chevron {
+    display: table !important;
+  }
+  tr.b-price-master .chevron {
+    display: table-row !important;
+  }
+  th.b-price-master .chevron,
+  td.b-price-master .chevron {
+    display: table-cell !important;
+  }
 }
 .b-price-group {
   margin-top: 28px;
@@ -8019,6 +8088,8 @@ body {
   line-height: 1.42857143;
   font-weight: 400;
   font-family: GothamProRegular;
+  cursor: pointer;
+  outline: none;
 }
 .b-price-group__title .glyphicon {
   margin-left: 15px;
@@ -8041,6 +8112,11 @@ body {
   white-space: nowrap;
   content: ". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . " ". . . . . . . . . . . . . . . . . . . . " ". . . . . . . . . . . . . . . . . . . . " ". . . . . . . . . . . . . . . . . . . . " ". . . . . . . . . . . . . . . . . . . . " ". . . . . . . . . . . . . . . . . . . . ";
 }
+@media (max-width: 767px) {
+  .b-price-table ul li:before {
+    display: none !important;
+  }
+}
 .b-price-table__row {
   margin-top: 13px;
 }
@@ -8048,6 +8124,8 @@ body {
   display: inline-block;
   padding-right: 0.33em;
   background: white;
+  cursor: pointer;
+  outline: none;
 }
 .b-price-table__row .price {
   float: right;
@@ -8061,6 +8139,72 @@ body {
 .b-price-table__row .price div span {
   padding: 0.33em;
   background: white;
+}
+.popover_price,
+.popoverContent {
+  max-width: 800px;
+  border-radius: 0px;
+}
+.popover_price .popover-content,
+.popoverContent .popover-content {
+  padding: 0px;
+}
+.popover_price .popover__img,
+.popoverContent .popover__img {
+  height: 100%;
+  width: auto;
+  float: left;
+  margin: 0 36px 0 0;
+}
+.popover_price .popover__description,
+.popoverContent .popover__description {
+  padding: 36px;
+}
+.popover_price .popover__description .title,
+.popoverContent .popover__description .title {
+  padding-bottom: 15px;
+  text-transform: uppercase;
+  color: #000;
+  font-size: 14px;
+  line-height: 1.42857143;
+  font-family: GothamProBold;
+}
+.popover_price .popover__description .text,
+.popoverContent .popover__description .text {
+  font-size: 14px;
+  line-height: 1.42857143;
+  font-weight: 400;
+  font-family: GothamProRegular;
+}
+.popover_price .popover__close,
+.popoverContent .popover__close {
+  cursor: pointer;
+  outline: none;
+  font-size: 35px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  opacity: 0.7;
+  z-index: 2;
+  font-weight: normal;
+}
+.popover_price .popover__close:hover,
+.popoverContent .popover__close:hover {
+  opacity: 0.9;
+}
+.popover_price .popover__control,
+.popoverContent .popover__control {
+  cursor: pointer;
+  outline: none;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  opacity: 0.7;
+  z-index: 2;
+}
+.popover_price .popover__control:hover,
+.popoverContent .popover__control:hover {
+  opacity: 0.9;
 }
 .b-modal-dialog {
   margin-right: 10px;

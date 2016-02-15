@@ -336,6 +336,10 @@
 }
 
 .b-price-gender {
+  @media (max-width: @screen-xs-min) {
+    .text-center();
+  }
+
   ul {
     margin: 0;
     padding: 0 0 12px;
@@ -348,10 +352,56 @@
     text-transform: uppercase;
     color: @gray-font;
     .g-font-bold(12px);
+    .g-pointer();
     &.active {
       color: @black-font;
       .g-font-bold(15px);
     }
+  }
+}
+
+.b-price-master {
+  @media (max-width: @screen-xs-min) {
+    position: relative;
+    ul {
+      margin: 0;
+      padding: 0;
+      li {
+        display: none;
+      }
+      li:first-child {
+        display: block;
+      }
+    }
+
+    ul.open {
+      position: absolute;
+      top: -20px;
+      right: 10px;
+      li {
+        display: block;
+      }
+    }
+
+  }
+  @media (min-width: @screen-xs-min) {
+    .pull-right();
+    ul {
+      margin: 0;
+      padding: 0;
+      li {
+        display: inline-block;
+        width: 140px;
+        text-align: right;
+      }
+    }
+  }
+
+  .chevron {
+    .visible-xs();
+    top: -17px;
+    right: 0;
+    position: absolute;
   }
 }
 
@@ -364,6 +414,7 @@
   text-transform: capitalize;
   color: @black-font;
   .g-font-regular(15px);
+  .g-pointer();
   .glyphicon {
     margin-left: 15px;
     color: @gray-font;
@@ -381,13 +432,13 @@
     overflow-x: hidden;
     list-style: none;
   }
-}
-
-.b-price-table ul li:before {
-  float: left;
-  width: 0;
-  white-space: nowrap;
-  content: ". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . " ". . . . . . . . . . . . . . . . . . . . " ". . . . . . . . . . . . . . . . . . . . " ". . . . . . . . . . . . . . . . . . . . "". . . . . . . . . . . . . . . . . . . . " ". . . . . . . . . . . . . . . . . . . . "
+  ul li:before {
+    .hidden-xs();
+    float: left;
+    width: 0;
+    white-space: nowrap;
+    content: ". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . " ". . . . . . . . . . . . . . . . . . . . " ". . . . . . . . . . . . . . . . . . . . " ". . . . . . . . . . . . . . . . . . . . "". . . . . . . . . . . . . . . . . . . . " ". . . . . . . . . . . . . . . . . . . . "
+  }
 }
 
 .b-price-table__row {
@@ -396,6 +447,7 @@
     display: inline-block;
     padding-right: 0.33em;
     background: white;
+    .g-pointer();
   }
 
   .price {
@@ -415,6 +467,52 @@
   }
 }
 
+.popover_price, .popoverContent {
+  max-width: 800px;
+  border-radius: 0px;
+
+  .popover-content {
+    padding: 0px;
+  }
+
+  .popover__img {
+    height: 100%;
+    width: auto;
+    float: left;
+    margin: 0 36px 0 0;
+  }
+
+  .popover__description {
+    padding: 36px;
+    .title {
+      padding-bottom: 15px;
+      text-transform: uppercase;
+      color: @black-font;
+      .g-font-bold(14px);
+    }
+    .text {
+      .g-font-regular(14px)
+    }
+  }
+
+  .popover__close {
+    .g-pointer();
+    .g-close(35px, 10px, 10px);
+    font-weight: normal;
+  }
+  .popover__control {
+    .g-pointer();
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    opacity: 0.7;
+    z-index: 2;
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+}
+
 .b-modal-dialog {
   margin-right: 10px;
   margin-left: 10px;
@@ -430,15 +528,7 @@
   padding: 0;
 
   .close {
-    font-size: 35px;
-    position: absolute;
-    right: 10px;
-    top: 10px;
-    opacity: 0.7;
-    z-index: 2;
-    &:hover {
-      opacity: 0.9;
-    }
+    .g-close(35px, 10px, 10px);
   }
 
   .controls {

@@ -1,5 +1,4 @@
 function Abstract() {
-    this.createElement();
     this.bindEvents();
 }
 Abstract.prototype.showPopup = function () {
