@@ -26,7 +26,6 @@ use yii\helpers\Url;
     <?}?>
 
     <div style="display: none">
-
         <div id="pressModal" class="b-press-modal">
             <div class="modal-content b-modal-content">
                 <div class="modal-body b-modal-body">
