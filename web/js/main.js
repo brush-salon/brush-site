@@ -3,6 +3,7 @@ require('bootstrap/js/transition');
 require('bootstrap/js/modal');
 require('bootstrap/js/collapse');
 
+
 var PressPage = require('./pages/press.js');
 var AboutPage = require('./pages/about.js');
 var PricePage = require('./pages/price.js');
