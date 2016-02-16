@@ -7436,21 +7436,41 @@ html {
   min-height: 100%;
 }
 body {
-  margin-bottom: 180px;
   font: 15px/30px GothamProRegular;
+}
+@media (max-width: 480px) {
+  body {
+    margin-bottom: 40px;
+  }
+}
+@media (min-width: 480px) {
+  body {
+    margin-bottom: 180px;
+  }
 }
 .container {
   padding-bottom: 80px;
 }
 .b-footer {
-  padding: 50px 80px 0;
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 180px;
-  border-top: 1px solid #e1e1e1;
-  margin: 0 auto;
-  text-align: center;
+}
+@media (max-width: 480px) {
+  .b-footer {
+    height: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+@media (min-width: 480px) {
+  .b-footer {
+    padding: 50px 80px 0;
+    height: 180px;
+    border-top: 1px solid #e1e1e1;
+    margin: 0 auto;
+    text-align: center;
+  }
 }
 .b-footer__social {
   float: right;
@@ -7465,12 +7485,14 @@ body {
 .b-footer__logo img {
   margin-top: -10px;
 }
-@media (max-width: 480px) {
-}
 .b-head {
-  padding-top: 15px;
   margin: 0 auto;
   text-align: center;
+}
+@media (max-width: 480px) {
+  .b-head {
+    padding-top: 30px;
+  }
 }
 @media (min-width: 480px) {
   .b-head {
@@ -7481,13 +7503,17 @@ body {
 .g-head {
   display: inline-block;
 }
-@media (max-width: 480px) {
-}
 .b-contacts {
   display: inline-block;
   float: left !important;
 }
 @media (max-width: 480px) {
+  .b-contacts {
+    width: 100%;
+    margin: 15px 0;
+    padding-top: 5px;
+    border-top: 1px solid #e1e1e1;
+  }
 }
 .b-contacts__item {
   height: 23px;
@@ -7528,18 +7554,16 @@ body {
   display: inline-block;
   margin-top: -10px;
 }
-@media (max-width: 480px) {
-}
-.b-logo img {
-  height: 52px;
+@media (min-width: 480px) {
+  .b-logo img {
+    height: 52px;
+  }
 }
 .b-register {
   display: inline-block;
   float: right !important;
   text-align: center;
   height: 38px;
-}
-@media (max-width: 480px) {
 }
 .b-register a {
   color: #000;
@@ -7746,8 +7770,17 @@ body {
 }
 .b-info {
   max-width: 960px;
-  margin: 0 auto;
-  text-align: center;
+}
+@media (min-width: 480px) {
+  .b-info {
+    text-align: justify;
+  }
+}
+@media (min-width: 480px) {
+  .b-info {
+    margin: 0 auto;
+    text-align: center;
+  }
 }
 .b-info-text {
   float: left;

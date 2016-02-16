@@ -3,7 +3,7 @@ use yii\helpers\Url;
 ?>
 
 <footer class="b-footer">
-    <div class="b-footer__logo">
+    <div class="b-footer__logo hidden-xs">
         <img src="<?=Url::to('@web/images/logo-gray.png')?>">
     </div>
     <div class="b-footer__copyright">  &#169; Brush. <?=date('Y')?></div>
