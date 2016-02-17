@@ -7223,6 +7223,11 @@ button.close {
     display: none !important;
   }
 }
+@media (min-width: 480px) {
+  .container {
+    padding-bottom: 80px;
+  }
+}
 .modal {
   text-align: center;
 }
@@ -7447,9 +7452,6 @@ body {
   body {
     margin-bottom: 180px;
   }
-}
-.container {
-  padding-bottom: 80px;
 }
 .b-footer {
   position: absolute;
@@ -7741,11 +7743,20 @@ body {
   vertical-align: top;
   display: inline-block;
   position: relative;
-  margin: 0 10px 10px 0;
   padding: 0;
-  max-width: 184px;
+}
+@media (max-width: 480px) {
+  .b-menu-image-item {
+    margin: 0 0px 10px 0;
+    height: 100px;
+    width: 100%;
+  }
 }
 @media (min-width: 480px) {
+  .b-menu-image-item {
+    width: 184px;
+    margin: 0 10px 10px 0;
+  }
   .b-menu-image-item:last-child {
     margin-right: 0px;
   }
@@ -7762,11 +7773,70 @@ body {
           transform: translate(-50%, -50%);
   color: white;
 }
-.b-menu-image-item__title {
-  color: #808080;
-  font-size: 13px;
-  text-transform: uppercase;
-  word-spacing: 0em;
+.b-menu-image-item__img {
+  background-size: cover;
+}
+@media (max-width: 480px) {
+  .b-menu-image-item__img {
+    height: 100px;
+    width: 100%;
+  }
+}
+@media (min-width: 480px) {
+  .b-menu-image-item__img {
+    width: 184px;
+    height: 240px;
+  }
+}
+.b-menu-image-item__img_hair {
+  background-image: url(/images/main/hair.png);
+  background-position: 0 -150px;
+}
+.b-menu-image-item__img_nails {
+  background-image: url(/images/main/nails.png);
+  background-position: 0 -119px;
+}
+.b-menu-image-item__img_makeup {
+  background-image: url(/images/main/makeup.png);
+  background-position: 0 -188px;
+}
+.b-menu-image-item__img_depilation {
+  background-image: url(/images/main/depilation.png);
+  background-position: 0 -35px;
+}
+.b-menu-image-item__img_permanent-makeup {
+  background-image: url(/images/main/permanent-makeup.png);
+  background-position: 0 -57px;
+}
+@media (max-width: 480px) {
+  .b-menu-image-item__title {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    text-transform: uppercase;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  .b-menu-image-item__title .title {
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    word-spacing: 0.0em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    color: white;
+  }
+}
+@media (min-width: 480px) {
+  .b-menu-image-item__title {
+    color: #808080;
+    font-size: 13px;
+    text-transform: uppercase;
+    word-spacing: 0em;
+  }
 }
 .b-info {
   max-width: 960px;
