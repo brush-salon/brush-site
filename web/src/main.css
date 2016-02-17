@@ -7790,23 +7790,43 @@ body {
 }
 .b-menu-image-item__img_hair {
   background-image: url(/images/main/hair.png);
-  background-position: 0 -150px;
+}
+@media (max-width: 480px) {
+  .b-menu-image-item__img_hair {
+    background-position: 0 -150px;
+  }
 }
 .b-menu-image-item__img_nails {
   background-image: url(/images/main/nails.png);
-  background-position: 0 -119px;
+}
+@media (max-width: 480px) {
+  .b-menu-image-item__img_nails {
+    background-position: 0 -119px;
+  }
 }
 .b-menu-image-item__img_makeup {
   background-image: url(/images/main/makeup.png);
-  background-position: 0 -188px;
+}
+@media (max-width: 480px) {
+  .b-menu-image-item__img_makeup {
+    background-position: 0 -188px;
+  }
 }
 .b-menu-image-item__img_depilation {
   background-image: url(/images/main/depilation.png);
-  background-position: 0 -35px;
+}
+@media (max-width: 480px) {
+  .b-menu-image-item__img_depilation {
+    background-position: 0 -35px;
+  }
 }
 .b-menu-image-item__img_permanent-makeup {
   background-image: url(/images/main/permanent-makeup.png);
-  background-position: 0 -57px;
+}
+@media (max-width: 480px) {
+  .b-menu-image-item__img_permanent-makeup {
+    background-position: 0 -57px;
+  }
 }
 @media (max-width: 480px) {
   .b-menu-image-item__title {
